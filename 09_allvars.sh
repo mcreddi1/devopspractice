@@ -6,4 +6,4 @@ echo "no of variable: $#"
 
 echo "scrio name: $0"
 
-echo "present working directory: $pwd"
+echo "present working directory: $PWD"
