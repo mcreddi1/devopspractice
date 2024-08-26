@@ -4,6 +4,6 @@ FRUITS=("APPLE" "BANANA" "GRAPES")
 
 echo "First fruit is: ${FRUITS[0]}"
 
-echo "Second fruit is: {$FRUITS[2]}"
+echo "Second fruit is: ${FRUITS[1]}"
 
-echo  "THIRD FRUIT IS: {$fruits[2]}"
+echo  "THIRD FRUIT IS: ${fruits[2]}"
