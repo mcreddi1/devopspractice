@@ -8,9 +8,9 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.log"
 mkdir -p $LOGS_FOLDER
 
 USERID=$(id -u)
-R="\e31m"
-G="\e32m"
-Y="\e33m"
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
 
 CHECK_ROOT(){
 
@@ -19,7 +19,7 @@ CHECK_ROOT(){
     then 
     echo "Please run the script with root user access"
     exit 1
-fi
+    fi
 }
 
 VALIDATE(){
