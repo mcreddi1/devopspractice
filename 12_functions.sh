@@ -24,7 +24,7 @@ CHECK_ROOT
 
 dnf list installed git
 
-if ( $? -ne 0 )
+if [ $? -ne 0 ]
 
     then 
     echo "git is not installed, going to install"
@@ -37,7 +37,7 @@ fi
 
 dnf list installed mysqld
 
-if ( $? -ne 0 )
+if [ $? -ne 0 ]
 
     then 
     echo "mysql is not installed"
