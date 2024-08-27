@@ -35,8 +35,6 @@ else
 echo "git is already installed nothing todo"
 fi
 
-
-
 dnf list installed mysql
 
 if [ $? -ne 0 ]
