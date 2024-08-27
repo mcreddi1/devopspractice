@@ -23,11 +23,12 @@ dnf install git -y
     then 
     echo "installing git is not successful"
     exit 1
-    fi
+
     else
 
     
     echo "git installatio is successful"
+    fi
 
 else
 
