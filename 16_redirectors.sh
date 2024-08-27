@@ -1,9 +1,9 @@
 #!/bin/bash
 
 LOGS_FOLDER= "/var/log/scripts"
-SCRIPT_NAME= $( echo $0 | cut -d "." -f1 )
-TIME_STAMP= $( date +%y-%m-%d-%H-%m-%s )
-LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME-$TIME_STAMP.log"
+SCRIPT_NAME= $(echo $0 | cut -d "." -f1 )
+TIMESTAMP= $(date +%y-%m-%d-%H-%m-%s )
+LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.log"
 
 mkdir -p $LOGS_FOLDER
 
