@@ -7,7 +7,7 @@ FAILURE(){
 
 }
 
-trap 'failre "${LINENO}" "$BASH_COMMAND"' ERR #ERR is the error signal
+trap 'FAILURE "${LINENO}" "$BASH_COMMAND"' ERR #ERR is the error signal
 
 echo "hello world"
 echoo "hello world failed"
