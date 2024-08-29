@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source_dir=/var/log
+source_dir=/home/ec2-user/logs
 
 R="\e[31m"
 G="\e[32m"
