@@ -29,9 +29,9 @@ files=$(find $source_dir -name "*.log" -mtime $days )
 
 echo "Files: $files"
 
-if [ ! -z $files ]
-then
-    echo "files: $files"
-else
-    echo "no files older than $days"
-fi
+#if [ ! -z $files ]
+#then
+#    echo "files: $files"
+#else
+#    echo "no files older than $days"
+#fi
