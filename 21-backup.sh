@@ -24,7 +24,8 @@ then
     echo "$destination_dir not exists"
 fi
 
-files=$(find ${source_dir} -name "*.log" -mtime $days)
+files=$(find $source_dir -name "*.log" -mtime $days)
+
 
 echo "Files: $files"
 
