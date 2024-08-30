@@ -57,5 +57,5 @@ fi
 while IFS= read -r file #IFS: internal field separator empty it will ignore the space, -r is to not ignore special characters like /
 do
   echo "deleting line: $files"
-  rm -rf $files
+  #rm -rf $files
 done <<< $files
