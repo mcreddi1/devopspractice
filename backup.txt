@@ -1,0 +1,1 @@
+sh 21-backup.sh /home/ec2-user/backu-lgs/ /home/ec2-user/backup -7
