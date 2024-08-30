@@ -23,4 +23,4 @@ while IFS= read -r log_files #IFS: internal field separator empty it will ignore
 do
   echo "deleting file: $log_files"
   rm -rf $log_files
-done < $files
+done << $files
