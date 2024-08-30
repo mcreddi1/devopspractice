@@ -24,7 +24,7 @@ then
     echo "$destination_dir not exists"
 fi
 
-files=$(find $source_dir -name "*.log" -mtime +14)
+files=$(find ${source_dir} -name "*.log" -mtime +14)
 
 if [ ! -z $files ]
 then
