@@ -24,14 +24,18 @@ then
     echo "$destination_dir not exists"
 fi
 
-files=$(find $source_dir -name "*.log" -ctime $days )
+files=$(find $source_dir -name "*.log" -mtime $days )
+
+#-mtime n: Finds files that were last modified exactly n days ago.
+#-mtime +n: Finds files that were last modified more than n days ago.
+#-mtime -n: Finds files that were last modified less than n days ago.
 
 
 echo "Files: $files"
 
 if [ ! -z "$files" ]
 then
-    echo "files: $files"
+    echo "files:  are found $files"
 else
     echo "no files older than $days"
 fi
