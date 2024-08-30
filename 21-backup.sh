@@ -19,7 +19,7 @@ then
      echo "$source_dir not exists"
 fi
 
-if [ ! -d destination_dir ]
+if [ ! -d $destination_dir ]
 then
     echo "$destination_dir not exists"
 fi
