@@ -21,6 +21,6 @@ echo "files: $files"
 
 while IFS= read -r log_files #IFS: internal field separator empty it will ignore the space, -r is to not ignore special characters like /
 do
-  echo "deleting file: $files"
-  rm -rf $files
+  echo "deleting file: $log_files"
+  rm -rf $log_files
 done <<< $files
