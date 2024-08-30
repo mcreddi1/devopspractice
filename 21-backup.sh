@@ -30,7 +30,7 @@ echo "Files: $files"
 
 if [ -z $files ]
 then
-    echo "files are found"
+    echo "files: $files"
 else
     echo "no files older than $days"
 fi
