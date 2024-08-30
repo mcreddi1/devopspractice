@@ -1,6 +1,6 @@
 #!/bin/bash
 
-disk_usage=$(df -ht | grep xfs)
+disk_usage=$(df -hT | grep xfs)
 disc_threshhold=>5
 
 
