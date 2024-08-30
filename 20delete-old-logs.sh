@@ -19,8 +19,8 @@ fi
 log_files=$(find $source_dir -name "*.log" -mtime +14)
 echo "files: $log_files"
 
-while IFS= read -r files #IFS: internal field separator empty it will ignore the space, -r is to not ignore special characters like /
+while IFS= read -r log_files #IFS: internal field separator empty it will ignore the space, -r is to not ignore special characters like /
 do
-  echo "deleting files: $log_files"
+  echo "deleting file: $log_files"
   rm -rf $done <<< $log_files
 done <<< $log_files
