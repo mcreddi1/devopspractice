@@ -11,5 +11,4 @@ trap 'FAILURE "${LINENO}" "$BASH_COMMAND"' ERR #ERR is the error signal
 
 echo "hello world"
 echoo "hello world failed"
-echo "hello world success
-"
+echo "hello world success"
