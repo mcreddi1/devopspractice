@@ -12,7 +12,7 @@ do
     then
         echo "$PARTITION exceeds $DISK_THRESHOLD, current value: $USAGE"
     fi
-done <<< $DISK_USAGE
+done <<< $DISK_USAGE 
 
 #while IFS= read -r line #IFS,internal field seperatpor, empty it will ignore while space.-r is for not to ingore special charecters like /
 #do
