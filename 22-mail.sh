@@ -11,7 +11,7 @@ do
 
     partition=$(echo $line | grep xfs | awk '{print $NF}')
 
-    if usage=$disk_usage -ge $disc_threshhold
+    if [ usage=$disk_usage -ge $disc_threshhold ]
 then
     echo "$partition exceeds $disc_threshhold, current value: $usage"
     fi
