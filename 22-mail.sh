@@ -13,4 +13,4 @@ do
 then
     echo "$partition exceeds $disc_threshhold, current value: $usage"
     fi
-done 
+done <<< $disk_usage
