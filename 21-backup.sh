@@ -44,7 +44,7 @@ else
 fi
 
 zip_file="$destination_dir/$TIMESTAMP.zip"
-$files | zip "$zip_file" -@
+find $source_dir -name "*.log" -mtime $days | zip "$zip_file" -@
 
 if [ -f $zip_file ]
 then
